@@ -1,0 +1,1 @@
+expect_equal(m1$nobs, 16200)
