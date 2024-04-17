@@ -1,8 +1,9 @@
-data/*
-!data/raw/.gitkeep
-output/*
-!output/figures/.gitkeep
-!output/tables/.gitkeep
+# data/*
+# !data/raw/.gitkeep
+# output/*
+# !output/figures/.gitkeep
+# !output/tables/.gitkeep
+# Try rep: If so, output folder is entriely missing... error "sum.pdf cannot be found"
 # History files
 .Rhistory
 .Rapp.history
