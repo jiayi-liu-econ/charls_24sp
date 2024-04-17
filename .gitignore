@@ -1,5 +1,3 @@
-data/*
-!data/.gitkeep
 
 output/*
 !data/.gitkeep
