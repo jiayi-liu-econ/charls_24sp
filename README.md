@@ -7,7 +7,7 @@
 
 ## Data Availability Statement
 
-The data sources used in the replication package can be found in China Health and Retirement Longitudinal Study (CHARLS) http://charls.pku.edu.cn/en/. In this project, I use Wave 2020 in particular, which can be downloaded via https://charls.charlsdata.com/pages/Data/2020-charls-wave5/en.html. The "charls2013stata_psu_psu编码.dta" file I use to get the province information can be downloaded in Wave 2013 via https://charls.charlsdata.com/pages/Data/2013-charls-wave2/en.html. You may need to register for free first and wait for approval to download the dataset, which should take less than 5 workdays.
+The data sources used in the replication package can be found in China Health and Retirement Longitudinal Study (CHARLS) http://charls.pku.edu.cn/en/. In this project, I use Wave 2020 in particular, which can be downloaded via https://charls.charlsdata.com/pages/Data/2020-charls-wave5/en.html. The "charls2013stata_psu_psu编码.dta" file I use to get the province information can be downloaded in Wave 2013 via https://charls.charlsdata.com/pages/Data/2013-charls-wave2/en.html. You may need to register for free first and wait for approval to download the dataset, which should take less than 5 workdays. I have already attached the raw data in "./data/raw".
 
 ## Data Files and Code (Structure and Explanation)
 ### Data Preparation
