@@ -1,6 +1,8 @@
-
+data/*
+!data/raw/.gitkeep
 output/*
-!data/.gitkeep
+!output/figures/.gitkeep
+!output/tables/.gitkeep
 # History files
 .Rhistory
 .Rapp.history
