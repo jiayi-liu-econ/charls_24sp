@@ -29,16 +29,18 @@ saveRDS(m2, "./output/models/feols_life_satisfy.rds")
 # table output (same table, just two different output types)
 modelsummary(list(`Self-reported Health Status` = m1, `Life Satisfaction` = m2),
     stars = c("***" = 0.01, "**" = 0.05, "*" = 0.1),
-    # notes = c("*** p<0.01, ** p<0.05, * p<0.1"),
     output = "./output/tables/feols.md", # markdown output
-    gof_map = c("nobs", "r.squared")
-    )
+    gof_map = c("nobs",
+                "adj.r.squared",
+                "r.squared"))
 
 modelsummary(list(`Self-reported Health Status` = m1, `Life Satisfaction` = m2),
     stars = c("***" = 0.01, "**" = 0.05, "*" = 0.1),
-    # notes = c("*** p<0.01, ** p<0.05, * p<0.1"),
     output = "./output/tables/feols.tex", # latex output
-    gof_map = c("nobs", "r.squared")
-    )
+    gof_map = c("nobs",
+                "adj.r.squared",
+                "r.squared"))
+
+
 
 # render("./output/tables/feols.md", output_file = "./output/tables/feols.pdf") # strangely failed again and again...
