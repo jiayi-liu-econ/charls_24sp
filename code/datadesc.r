@@ -92,7 +92,7 @@ data20_clean <- data20 %>%
 # html(d_clean, size = 80, scroll = TRUE)
 
 # Note: hhexp_food is measured per week; hhexp is measured per month; other expenses are measured per year
-# Transform hhexp to per year. (Leave hhexp_food aside for summary this time.)
+# Transform hhexp to per year. (Transform hhexp as follows; For hhexp_food, leave it aside for summary this time.)
 data20_clean <- data20_clean %>% mutate(hhexp = hhexp*12)
 data20 <- data20 %>% mutate(hhexp = hhexp*12)
 
@@ -136,7 +136,8 @@ ggsave("./output/figures/histogram_expensemi.pdf", hist, width = 6, height = 6, 
 
 ######################################################
 # summary
-sum <- data20_clean %>% select(age,male,working,urban_nbs,rural_hk,married,eduyr,expense_mi,UEMI,URRMI,URMI,NCMI,PMI,OtherMI,attitude_govcovid,selfrepo_health,life_satisfy,hhexp,hhexp_food,hhexp_med,hhexp_covidprev,ends_meet) %>% 
+# data20_clean <- fread("./data/clean/data20_clean.csv")
+sum <- data20_clean %>% select(age,male,working,urban_nbs,rural_hk,married,eduyr,expense_mi,UEMI,URRMI,URMI,NCMI,PMI,OtherMI,attitude_govcovid,selfrepo_health,life_satisfy,hhexp,hhexp_med,hhexp_covidprev,ends_meet) %>% 
     tbl_summary(
         # type = list(c(attitude_govcovid) ~ "categorical",
         # c(male, working, urban_nbs, rural_hk, married, UEMI,URRMI,URMI,NCMI,PMI,OtherMI, selfrepo_health,life_satisfy, ends_meet) ~ "continuous"),
