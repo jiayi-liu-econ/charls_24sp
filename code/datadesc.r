@@ -120,7 +120,7 @@ boxplot <- ggplot(data_long, aes(x = variable, y = value)) +
   theme_minimal() +
   theme(plot.title = element_text(size = 8, face = "bold", lineheight = 1.2)) # Adjust size and lineheight
 
-ggsave("./output/figures/boxplot_expenses.pdf", boxplot, width = 6, height = 6, units = "in")
+ggsave("./output/figures/boxplot_expenses.png", boxplot, width = 6, height = 6, units = "in")
 
 # Better drawing histogram for expense_mi
 hist <- ggplot(data20_clean, aes(x = expense_mi)) +
@@ -132,7 +132,7 @@ hist <- ggplot(data20_clean, aes(x = expense_mi)) +
         theme(plot.title = element_text(family = "Times", face = "bold", size = 13, lineheight = 1.2),
         text = element_text(family = "Times"))
 #   annotate("text", x = Inf, y = Inf, label = "Bins = 50", hjust = 1.2, vjust = 1.2, size = 3.5, color = "black")  # Add annotation for bins 
-ggsave("./output/figures/histogram_expensemi.pdf", hist, width = 6, height = 6, units = "in")
+ggsave("./output/figures/histogram_expensemi.png", hist, width = 8, height = 6, units = "in")
 
 ######################################################
 # summary
