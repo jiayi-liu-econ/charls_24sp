@@ -106,7 +106,7 @@ data20_clean <- data20_clean %>% mutate(lexpense_mi = log(expense_mi+1), lhhexp 
 fwrite(data20_clean, "./data/clean/data20_clean.csv")
 
 
-#######################################################3
+#######################################################
 # Draw boxplots again
 data_long <- reshape2::melt(data20_clean, measure.vars = c("hhexp","hhexp_covidprev","hhexp_med","expense_mi"))
 
